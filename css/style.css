@@ -16,25 +16,20 @@ img {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-    /* debug */
-    min-height: 200px;
-    border: 1px solid black;
+   
 }
 
 .small-container {
-    width: 70%;
+    width: 60%;
     max-width: 900px;
     margin: 0 auto;
-    /* debug */
-    min-height: 200px;
-    border: 1px solid black;
+   
 
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 .row-grid {
@@ -48,13 +43,15 @@ section:not(#hero) {
     margin: 40px auto;
 }
 
-
-a {
+ul{
+    list-style: none;
+}
+a:not(.link-b){
     text-decoration: none;
-    color: black;
+    color:inherit;
 }
 
-.button-blue {
+a.button-blue {
     background-color: #0061fe;
     color: #ffffff;
     padding: 5px;
@@ -74,18 +71,18 @@ a {
 
 .w-40 {
     width: 40%;
-    border: 1px solid black;
 }
 
 .w-60 {
     width: 60%;
-    border: 1px solid black;
 }
 
 /* HEADER */
+header{
+    padding: 10px;
+}
 .col>ul {
     display: flex;
-    list-style: none;
     gap: 20px;
 }
 
@@ -108,7 +105,7 @@ h1 {
 
 .lower {
     position: relative;
-    top: 70px;
+    top: 60px;
     left: auto;
 }
 
@@ -117,26 +114,47 @@ h1 {
 }
 
 /* /hero */
-
-/* business section */
-.title {
-    margin: 20px auto;
-    /* debug */
-    background-color: #ffe4c4;
-    height: 100px;
+.main-hr{
+    width: 100%;
+    margin:60px 0;
+    border: 1px solid #f7f4f5;
 }
 
-.top-business {
-    width: calc(90%/3);
-    /* debug */
-    height: 600px;
-    background-color: #aae6c1;
+/* business section */
+.title-b {
+    font-size: 35px;
+}
+
+.col-b{
+    
+    width: calc(95%/3);
+    border:1px solid #e7e5e5;
 }
 
 .head-b {
-    /* debug */
-    background-color: #ffe4c4;
-    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    border-bottom: 1px solid #e7e5e5;
+}
+
+.body-b{
+    line-height: 25px;
+    padding: 10px;
+    font-size: 12px;
+}
+.period{
+    color: #e7e5e5;
+}
+
+.hr-b{
+     width: 50px;
+    border-bottom: 1px solid #e7e5e5;
+}
+
+.point>li::before{
+    content: "\2714";
+    color:#0061fe
 }
 
 .bot-business {
@@ -144,6 +162,7 @@ h1 {
     height: 100px;
     background-color: #aae6c1;
 }
+
 
 /* /business section */
 
