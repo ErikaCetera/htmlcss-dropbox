@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* debug */
-    border: 1px solid #000000;
+    font-family: sans-serif;
 }
 
 img {
@@ -19,21 +18,23 @@ img {
     margin: 0 auto;
     /* debug */
     min-height: 200px;
+    border: 1px solid black;
 }
 
 .small-container {
-    width: 60%;
-    max-width: 800px;
+    width: 70%;
+    max-width: 900px;
     margin: 0 auto;
     /* debug */
     min-height: 200px;
+    border: 1px solid black;
+
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    padding: 10px;
 }
 
 .row-grid {
@@ -44,28 +45,52 @@ img {
 }
 
 section:not(#hero) {
-    margin:40px auto;
+    margin: 40px auto;
 }
 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button-blue {
+    background-color: #0061fe;
+    color: #ffffff;
+    padding: 5px;
+    max-width: 150px;
+}
+
+
 /* utility */
-.mt-20 {
-    margin-top: 20px;
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mtb-30 {
+    margin: 30px 0;
+
 }
 
 .w-40 {
     width: 40%;
+    border: 1px solid black;
 }
 
 .w-60 {
     width: 60%;
+    border: 1px solid black;
 }
 
 /* HEADER */
-.col {
-    width: calc(100%/2);
-    /* debug */
-    min-height: 100px;
-    background-color: #ffe4c4;
+.col>ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
 }
 
 /* /HEADER */
@@ -73,26 +98,22 @@ section:not(#hero) {
 /* MAIN */
 /* hero */
 #hero {
-    background-color: rgb(0, 149, 255);
+    background-color: #b4d0e6;
 }
 
-.col-big {
-    width: 100%;
-    /* debug */
-    height: 50px;
-    background-color: #ffe4c4;
-}
-
-.col-hero {
-    /* debug */
-    height: 300px;
-    background-color: #2d55e9;
+h1 {
+    font-size: 60px;
+    font-weight: 800;
 }
 
 .lower {
     position: relative;
-    top: 20px;
+    top: 70px;
     left: auto;
+}
+
+.fa-arrow-down {
+    font-size: 40px;
 }
 
 /* /hero */
@@ -147,20 +168,22 @@ section:not(#hero) {
 /* /MAIN */
 
 /* FOOTER */
-footer{
+footer {
     background: #343333;
 
 }
-.list{
+
+.list-f {
     width: calc(80%/5);
-/* debug */
-height: 300px;
-background-color: #aae6c1;
+    /* debug */
+    height: 300px;
+    background-color: #aae6c1;
 }
 
-.language{
+.language {
     /* debug */
     height: 20px;
     background-color: #aae6c1;
 }
+
 /* /FOOTER */
