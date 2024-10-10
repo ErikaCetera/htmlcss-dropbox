@@ -16,20 +16,21 @@ img {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-   
+
 }
 
 .small-container {
     width: 60%;
     max-width: 900px;
     margin: 0 auto;
-   
+
 
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+
 }
 
 .row-grid {
@@ -40,20 +41,28 @@ img {
 }
 
 section:not(#hero) {
-    margin: 40px auto;
+    margin: 50px auto;
 }
 
-ul{
+ul {
     list-style: none;
 }
-a:not(.link-b){
+
+a:not(.link-b) {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
 a.button-blue {
     background-color: #0061fe;
     color: #ffffff;
+    padding: 5px;
+    max-width: 150px;
+}
+
+.button-white {
+    color: #aaa4a4;
+    border: 2px solid #aaa4a4;
     padding: 5px;
     max-width: 150px;
 }
@@ -66,7 +75,6 @@ a.button-blue {
 
 .mtb-30 {
     margin: 30px 0;
-
 }
 
 .w-40 {
@@ -77,10 +85,15 @@ a.button-blue {
     width: 60%;
 }
 
+.border {
+    border: 1px solid #e7e5e5;
+}
+
 /* HEADER */
-header{
+header {
     padding: 10px;
 }
+
 .col>ul {
     display: flex;
     gap: 20px;
@@ -114,74 +127,76 @@ h1 {
 }
 
 /* /hero */
-.main-hr{
+.main-hr {
     width: 100%;
-    margin:60px 0;
+    margin: 60px 0;
     border: 1px solid #f7f4f5;
 }
 
 /* business section */
 .title-b {
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
 }
 
-.col-b{
-    
+.col-b {
     width: calc(95%/3);
-    border:1px solid #e7e5e5;
 }
 
 .head-b {
     text-align: center;
     font-size: 12px;
     padding: 10px;
-    border-bottom: 1px solid #e7e5e5;
 }
 
-.body-b{
+.body-b {
     line-height: 25px;
     padding: 10px;
     font-size: 12px;
 }
-.period{
+
+.period {
     color: #e7e5e5;
 }
 
-.hr-b{
-     width: 50px;
+.hr-b {
+    width: 50px;
     border-bottom: 1px solid #e7e5e5;
 }
 
-.point>li::before{
+.point>li::before {
     content: "\2714";
-    color:#0061fe
+    color: #0061fe
 }
-
-.bot-business {
-    /* debug */
-    height: 100px;
-    background-color: #aae6c1;
-}
-
 
 /* /business section */
 
 /* contact section */
-.col-contact {
-    /* debug */
-    height: 300px;
-    background-color: rgb(255, 196, 239);
+.col-c {
+    padding: 30px;
+    font-size: 15px;
+}
+
+.col>p {
+    color: #aaa4a4;
 }
 
 /* /contact section */
 
 /* grid section */
-.col-grid {
+.col-grid {}
+
+.row-grid>div {
     width: calc(90%/3);
-    /* debug */
-    height: 200px;
-    background-color: #5aa7e5;
+    font-size: 12px;
 }
+
+h3 {
+    margin: 10px 0;
+}
+
+
 
 /* /grid section */
 /* /MAIN */
